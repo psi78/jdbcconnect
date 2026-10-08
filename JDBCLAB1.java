@@ -1,6 +1,6 @@
 import java.sql.*;
 
-public class JDBCLAB1 {  // This must match your file name!
+public class JDBCLAB1 {  
     public static void main(String[] args) {
         try {
             String url = "jdbc:mysql://localhost:3306/StudentsDB";
