@@ -1,0 +1,17 @@
+import java.sql.*;
+
+public class JDBCLAB1 {  // This must match your file name!
+    public static void main(String[] args) {
+        try {
+            String url = "jdbc:mysql://localhost:3306/StudentsDB";
+            String username = "root";
+            String password = "Isratheboss54";
+
+            Connection conn = DriverManager.getConnection(url, username, password);
+            System.out.println("Established Connection");
+            conn.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+}
